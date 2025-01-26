@@ -41,8 +41,8 @@
 #include "ping/ping_sock.h"
 
 
-#define SSID "ESP32_Hotspot" //"IZZI-4768"//
-#define PASS "password123" //"8C61A3C00569" //"password123"
+#define SSID "Your-networks-name-(SSID)" 
+#define PASS "Your-internet-password" 
 #define PORT 1234
 
 #define PULSES_PER_REV 800
