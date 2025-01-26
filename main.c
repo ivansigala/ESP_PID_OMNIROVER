@@ -213,7 +213,7 @@ void send_recieve(void *pvParameters){
     
     char *payload = "00000000";
     char rx_buffer[10];
-    char host_ip[] = "192.168.4.2";//"192.168.4.2"; // Server IP
+    char host_ip[] = "0.0.0.0"; //Your server IP
     int addr_family = 0;
     int ip_protocol = 0;
     float speeds[4];
