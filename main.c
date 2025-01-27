@@ -159,7 +159,7 @@ void hex_to_float(char *hex_num, float *list);
 static void wifi_event_handler(void *event_handler_arg, esp_event_base_t event_base, int32_t event_id, void *event_data);
 void wifi_connection();
 
-
+//Repetitive tasks---------------------------------------------------------------------------------------------------------------------------------------
 void PID_compute_callback(void *arg){
     
 
@@ -300,8 +300,9 @@ void send_recieve(void *pvParameters){
     }
 
 }
+//-------------------------------------------------------------------------------------------------------------------------------------------------
 
-
+//The initialization stage-------------------------------------------------------------------------------------------------------------------------
 void app_main(void)
 {    
 
@@ -359,9 +360,11 @@ void app_main(void)
     
     xTaskCreate(send_recieve, "tcp_client", 8192, (void *)AF_INET, 10, NULL);
    
-
 }
+//-------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+//Functions ----------------------------------------------------------------------------------------------------------------------------------------
 int hex_decode(char hex){
     int num = (int)hex;
     if(num <= 57 && num >= 49){
@@ -819,3 +822,5 @@ static bool example_adc_calibration_init(adc_unit_t unit, adc_channel_t channel,
 
     return calibrated;
 }
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+
