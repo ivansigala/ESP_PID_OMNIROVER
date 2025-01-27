@@ -11,7 +11,7 @@ and a Matlab code that allows any user to input the velocity it wants on the “
 ## IDF Component Manager Manifest File
 dependencies:
   espressif/led_strip: "^3.0.0"
-  ## Required IDF version
+  Required IDF version
   idf:
     version: ">=4.1.0"
 
