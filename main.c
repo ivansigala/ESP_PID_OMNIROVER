@@ -1,3 +1,10 @@
+/*
+    Author: Diego Iván Sigala Sánchez
+    Description: The following code is meant to receive a string of characters via Wi-Fi
+    and process that string to modify the speed of 4 motors using a PID control algorithm
+    and return the values of the actual speed of the motors.
+*/
+
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
